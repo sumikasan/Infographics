@@ -10,9 +10,9 @@ $( document ).ready(function() {
 		// To do this change d.grand_parent, d.parent and d.child to the column titles in the order you wish to nest them, e.g. d.column_1, d.column_2 etc.
 		// NOTE: Your column titles cannot contain spaces.
 		var nested_data = d3.nest()
-			.key(function(d)  { return d. All surveys started; })
-			.key(function(d)  { return d. All Certificates; })
-			.key(function(d)  { return d. Published Certificates; })
+			.key(function(d)  { return "d.All surveys started"; })
+			.key(function(d)  { return "d.All Certificates"; })
+			.key(function(d)  { return "d.Published Certificates"; })
 			.entries(csv_data);
 
 		// Creat the root node for the treemap
