@@ -13,7 +13,7 @@ $( document ).ready(function() {
 			.key(function(d)  { return d.Directorate; })
 			.key(function(d)  { return d.Departure_2011; })
 			.key(function(d)  { return d.Ticket_class_description; })
-			.key(function(d)  { return d.Supplier_name; })
+			.key(function(d)  { return d.Destination; })
 			.entries(csv_data);
 
 		// Creat the root node for the treemap
